@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with the Northstar team. Tell us what you need and we'll help you find the right answer."
+    />
+    <title>Contact us — Northstar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Northstar home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>northstar<span class="brand-period">.</span></span>
+      </a>
+      <a class="header-link" href="mailto:hello@northstar.example">
+        <span class="status-dot" aria-hidden="true"></span>
+        We’re here to help
+      </a>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow"><span aria-hidden="true">✳</span> A real person, ready to help</p>
+        <h1 id="page-title">Let’s get to<br />the <span>right answer.</span></h1>
+        <p class="intro-copy">
+          Have a question, an idea, or just need a hand? Tell us a little about it.
+          We’ll make sure your message gets to the right person.
+        </p>
+        <div class="response-note">
+          <span class="response-icon" aria-hidden="true">↗</span>
+          <p><strong>Usually a reply within one business day.</strong><br />No bots. Just our team.</p>
+        </div>
+        <div class="decorative-star" aria-hidden="true">✳</div>
+      </section>
+
+      <section class="form-panel" aria-labelledby="form-title">
+        <div class="form-heading">
+          <div>
+            <p class="form-step">YOUR MESSAGE <span>·</span> 01 / 01</p>
+            <h2 id="form-title">How can we help?</h2>
+          </div>
+          <span class="form-sparkle" aria-hidden="true">✳</span>
+        </div>
+
+        <form id="inquiry-form">
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Your name <span aria-hidden="true">*</span></label>
+              <input id="name" name="name" type="text" placeholder="Jane Smith" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email address <span aria-hidden="true">*</span></label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="jane@company.com"
+                autocomplete="email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="topic">What’s this about? <span aria-hidden="true">*</span></label>
+            <div class="select-wrap">
+              <select id="topic" name="topic" required>
+                <option value="" selected disabled>Choose an inquiry type</option>
+                <option value="product">Product question</option>
+                <option value="service">Services &amp; consulting</option>
+                <option value="order">Order or billing</option>
+                <option value="partnership">Partnership</option>
+                <option value="other">Something else</option>
+              </select>
+              <span class="select-arrow" aria-hidden="true">⌄</span>
+            </div>
+          </div>
+
+          <div id="follow-up-fields" class="follow-up-fields" hidden>
+            <div class="field" id="product-field" hidden>
+              <label for="product">Which product?</label>
+              <input id="product" name="product" type="text" placeholder="Product name or model" />
+            </div>
+            <div class="field" id="order-field" hidden>
+              <label for="order-number">Order number <span class="optional">(if you have it)</span></label>
+              <input id="order-number" name="orderNumber" type="text" placeholder="e.g. NS-10482" />
+            </div>
+            <div class="field" id="service-field" hidden>
+              <label for="service-interest">What would you like help with?</label>
+              <select id="service-interest" name="serviceInterest">
+                <option value="" selected disabled>Select a service</option>
+                <option>Strategy &amp; planning</option>
+                <option>Implementation</option>
+                <option>Something else</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">A little more detail <span aria-hidden="true">*</span></label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              minlength="10"
+              placeholder="The more you share, the better we can help..."
+              required
+            ></textarea>
+            <div class="textarea-footer">
+              <span>At least 10 characters, please.</span>
+              <span id="char-count" aria-live="polite">0 / 1000</span>
+            </div>
+          </div>
+
+          <label class="checkbox-field" for="updates">
+            <input id="updates" name="updates" type="checkbox" />
+            <span class="custom-checkbox" aria-hidden="true"></span>
+            <span>It’s okay to send me occasional product updates. No spam, ever.</span>
+          </label>
+
+          <button class="submit-button" type="submit">
+            <span>Send your message</span>
+            <span aria-hidden="true">↗</span>
+          </button>
+          <p class="privacy-note">By sending this, you agree to our <a href="mailto:privacy@northstar.example">privacy policy</a>.</p>
+          <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+        </form>
+
+        <div id="success-message" class="success-message" role="status" hidden>
+          <span class="success-icon" aria-hidden="true">✓</span>
+          <div>
+            <h3>Message ready to go!</h3>
+            <p>Thanks for reaching out. We’ll be in touch within one business day.</p>
+            <button id="send-another" class="text-button" type="button">Send another message <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2025 Northstar Studio</span>
+      <span>Made for good conversations <span class="footer-heart" aria-hidden="true">♥</span></span>
+    </footer>
+  </body>
+</html>
